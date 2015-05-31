@@ -1,0 +1,7 @@
+services:
+  s9e.reparserlogs.listener:
+    class: s9e\reparserlogs\listener
+    arguments:
+        - "/tmp/log"
+    tags:
+      - { name: event.listener }
